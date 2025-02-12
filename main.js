@@ -11,5 +11,21 @@ const colors = [
     "#A52A2A"  // Brown
   ];
   
-  console.log(colors[4]);
-  
+  function  genNum(){
+     const generateRandomNumbers = Math.floor(Math.random()*colors.length);
+     console.log(generateRandomNumbers)
+  }
+  genNum()
+
+  const genBody = document.querySelector('body');
+
+  function backgroundChanger(){
+    const changeBackground = colors[genNum()];
+    genBody.style.backgroundColor = changeBackground;
+    console.log(genBody.style.backgroundColor);
+  }
+  backgroundChanger()
+
+
+  const btn = document.querySelector('.button');
+  btn.oclick = backgroundChanger()
