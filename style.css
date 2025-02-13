@@ -1,12 +1,21 @@
 body{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
     background-color: #000;
+    gap: 10px;
 }
 .button{
     font-size: larger;
     text-transform: uppercase;
+}
+
+.code{
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
 }

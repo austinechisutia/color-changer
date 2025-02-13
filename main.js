@@ -18,9 +18,12 @@ const colors = [
   }
 
   const genBody = document.querySelector('body');
+  const colorCode = document.querySelector('.code')
+
 
   function backgroundChanger(){
     const changeBackground = colors[genNum()];
+    colorCode.innerText = changeBackground
     genBody.style.backgroundColor = changeBackground;
     console.log(changeBackground);
   }
